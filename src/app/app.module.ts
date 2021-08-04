@@ -12,6 +12,9 @@ import { DeadjourComponent } from './deadjour/deadjour.component';
 import { DeadtotalComponent } from './deadtotal/deadtotal.component';
 import { HospitalComponent } from './hospital/hospital.component';
 
+import {MatMenuModule} from '@angular/material/menu';
+import {MatButtonModule} from '@angular/material/button';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +29,9 @@ import { HospitalComponent } from './hospital/hospital.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatMenuModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
